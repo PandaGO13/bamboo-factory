@@ -35,36 +35,43 @@ body{
 
 .rojo{
 	background: #EC1C24;
-	padding: 5px 100px;
+	padding: 15px 0;
 	display: flex;
+	justify-content: center;
+}
+
+.rojo-content{
+	width: 92%;
+	display: flex;
+	justify-content: space-between;
 }
 
 .logo{
+	width: 12%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-grow: 1;
-	height: 100px;
 }
 
 .logo img{
 	width: 70px;
 }
 
-.box-header {
-	flex-grow: 7;
+.box-header{
+	width: 86%;
 	color: #fff;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 }
 
-.box-header div:first-child {
-	display:flex;
+.box-header div:first-child{
+	display: flex;
 	justify-content: space-between;
+	padding-bottom: 15px;
 }
 
-.box-header span {
+.box-header span{
 	font-size: 11px;
 }
 
@@ -72,38 +79,84 @@ body{
 	font-weight: bold;
 }
 
-.box-header span i {
-	margin: 0 5px;
-}
-
-.box-header button
-{
-	margin: 0 5px;
-	border: none;
+.box-header button{
+	margin-left: 5px;
 	background: #fff;
 	color: #EC1C24;
-	font-size: 10px;
+	border: none;
 	border-radius: 16px;
+	font-size: 10px;
 	font-weight: bold;
 }
 
-.box-header i{
-	color: #fff;
+.box-header span i {
+	margin-right: 5px;
 }
 
-.box-header input {
-	padding: 5px 20px;
-	width: 80%;
-	height: 30px;
-	font-size: 15px;
+.box-options{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.box-options div:first-child{
+	width: 85%;
+	background: #fff;
+	border-radius: 25px;
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+}
+
+.box-options input{
+	width: 92%;
+	margin-left: 15px;
 	border: none;
-	border-radius: 20px;
+	font-size: 20px;
 }
 
 .box-header input:focus {
 	outline: none;
 }
 
-.box-header a{
-	margin: 0 10px;
+.box-options div:first-child i{
+	margin-right: 20px;
+	color: #EC1C24;
+	font-size: 20px;
+}
+
+.box-options div:last-child{
+	width: 20%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.box-options div:last-child a:first-child{
+	margin-left: 30px; 
+}
+
+.box-options div:last-child i{
+	color: #fff;
+	font-size: 18px;
+}
+
+
+.box-menu{
+	background: #EC1C24;
+	border-top: 0.2px solid #fff;
+	display: flex;
+	justify-content: center;
+}
+
+.box-menu-content{
+	padding: 15px 0;
+	width: 92%;
+	color: #fff;
+	font-size: 13px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.box-menu-content i{
+	margin-left: 10px;
 }
