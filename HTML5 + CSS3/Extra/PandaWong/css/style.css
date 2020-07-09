@@ -65,21 +65,21 @@ body{
 	justify-content: space-around;
 }
 
-.box-header div:first-child{
+.cuenta{
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: 15px;
 }
 
-.box-header span{
+.cuenta span{
 	font-size: 11px;
 }
 
-.box-header span:first-child{
+.cuenta span:first-child{
 	font-weight: bold;
 }
 
-.box-header button{
+.cuenta button{
 	margin-left: 5px;
 	background: #fff;
 	color: #EC1C24;
@@ -89,7 +89,7 @@ body{
 	font-weight: bold;
 }
 
-.box-header span i {
+.cuenta span i {
 	margin-right: 5px;
 }
 
@@ -99,47 +99,44 @@ body{
 	align-items: center;
 }
 
-.box-options div:first-child{
+.search{
 	width: 85%;
 	background: #fff;
 	border-radius: 25px;
 	display: flex;
 	align-items: center;
-	padding: 10px 0;
+	padding: 10px 15px;
 }
 
-.box-options input{
-	width: 92%;
-	margin-left: 15px;
+.search input{
+	width: 98%;
 	border: none;
 	font-size: 20px;
 }
 
-.box-header input:focus {
+.search input:focus {
 	outline: none;
 }
 
-.box-options div:first-child i{
-	margin-right: 20px;
+.search i{
 	color: #EC1C24;
 	font-size: 20px;
 }
 
-.box-options div:last-child{
+.options {
 	width: 20%;
 	display: flex;
 	justify-content: space-between;
 }
 
-.box-options div:last-child a:first-child{
+.options a:first-child{
 	margin-left: 30px; 
 }
 
-.box-options div:last-child i{
+.options i{
 	color: #fff;
 	font-size: 18px;
 }
-
 
 .box-menu{
 	background: #EC1C24;
@@ -156,6 +153,26 @@ body{
 	display: flex;
 	justify-content: space-between;
 }
+
+.box-menu-content span:hover{
+	cursor: pointer;
+}
+
+.box-menu-content a{
+	text-decoration: none;
+	color: #fff;
+	display: flex;
+	flex-flow: column; 
+}
+
+.box-menu-content a::after {
+  content: '';
+  border-bottom: solid 1px #fff;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.box-menu-content a:hover::after { transform: scaleX(1); }
 
 .box-menu-content i{
 	margin-left: 10px;
