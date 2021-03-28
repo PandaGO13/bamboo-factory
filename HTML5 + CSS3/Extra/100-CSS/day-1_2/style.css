@@ -1,0 +1,171 @@
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	color: #786450;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.frame
+{
+	width: 400px;
+	height: 400px;	
+	background: linear-gradient(to right, #DB9C5D, #CD8251) ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 3px;
+	border-top: rgba(120, 100, 80, 0.1) 3px inset;
+}
+
+.container
+{
+	width: 320px;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 3px;
+	box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
+}
+
+.box
+{
+	width: 120px;
+	height: 100px;
+	background-color: #F5E8DF;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1px;
+}
+
+.box:first-child
+{
+	border-radius: 0 3px 0 0;	
+}
+
+.box:last-child
+{
+	margin-bottom: 0px;
+	border-radius: 0 0 3px 0;
+}
+
+.box:hover
+{
+	background-color: #E1CFC2;
+	cursor: pointer;
+}
+
+.bold
+{
+	font-weight: bold;
+	color: rgba(120, 100, 80, 0.8);
+}
+
+.tag
+{
+	font-size: 11px;
+}
+
+.left
+{
+	width: 100%;
+	padding: 20px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.profile, .options
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.image-profile
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.borde-interno
+{
+	position: absolute;
+	height: 96px;
+	width: 96px;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	border-radius: 50% 50%;
+	border: 1px solid #786450;
+	border-left: 1px solid #fff;
+	z-index: 2;
+	transition: transform 2s ease-in-out;
+}
+
+.borde-externo
+{
+	height: 102px;
+	width: 102px;
+	border-radius: 50% 50%;
+	border: 1px solid #786450;
+	border-right: 1px solid #fff;
+	z-index: 1;
+	transition: transform 2s ease-in-out;
+}
+
+.borde-interno:hover
+{
+	transform: rotate(360deg);
+	cursor: pointer;
+}
+
+.borde-interno:hover + .borde-externo
+{
+	transform: rotate(-360deg);
+}
+
+.borde-interno img
+{
+	width: 90px;
+	height: 90px;
+	border-radius: 50% 50%;	
+	transition: transform 2s ease-in-out;
+}
+
+.borde-interno:hover img
+{
+	transform: rotate(-360deg);
+}
+
+.profile .bold
+{
+	margin-top: 15px;
+}
+
+.options button
+{
+	width: 120px;
+	padding: 8px 0;
+	margin-bottom: 10px;
+	color: #786450;
+	background-color: #fff;
+	border: 1px solid #786450;
+	border-radius: 20px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.options button:hover
+{
+	color: #fff;
+	background-color: #786450;
+}
